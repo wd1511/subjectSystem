@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<constant name = "struts.devMode" value = "true"/>
+	<package name="subjectSystem" namespace = "/" extends="struts-default">
+		
+		<action name="upload" class="subjectSystem.upload" method = "execute">
+			<result name="success1">/student.jsp</result>
+			<result name="success2">/teacher.jsp</result>
+			<result name="success3">/manager.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="chooseSub" class="subjectSystem.chooseSub" method = "execute">
+			<result name="success">/chooseSub.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="chooseSub1" class="subjectSystem.chooseSub1" method = "execute">
+			<result name="success">/chooseSubOK.jsp</result>
+			<result name="false">/chooseSubFal.jsp</result>
+		</action>
+		
+		<action name="chooseSub2" class="subjectSystem.chooseSub2" method = "execute">
+			<result name="success">/student.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="searchChooseSub" class="subjectSystem.searchChooseSub" method = "execute">
+			<result name="success">/searchChooseSub.jsp</result>
+			<result name="false">/error.jsp</result>
+		</action>
+		
+		<action name="searchChooseSub1" class="subjectSystem.searchChooseSub1" method = "execute">
+			<result name="success">/searchChooseSubOK.jsp</result>
+			<result name="false">/searchChooseSubFal.jsp</result>
+		</action>
+		
+		<action name="teaSearchStu" class="subjectSystem.teaSearchStu" method = "execute">
+			<result name="success">/teaSearchStu.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaSearchStu1" class="subjectSystem.teaSearchStu1" method = "execute">
+			<result name="success">/teaSearchStuOK.jsp</result>
+			<result name="false">/teaSearchStuFal.jsp</result>
+		</action>
+		
+		<action name="teaSearchStu2" class="subjectSystem.teaSearchStu2" method = "execute">
+			<result name="success">/teacher.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaAddSub" class="subjectSystem.teaAddSub" method = "execute">
+			<result name="success">/teaAddSub.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaAddSub1" class="subjectSystem.teaAddSub1" method = "execute">
+			<result name="success">/teaAddSubOK.jsp</result>
+			<result name="false1">/teaAddSubFal.jsp</result>
+			<result name="false2">/error.jsp</result>
+		</action>
+		
+		<action name="teadel" class="subjectSystem.teadel" method = "execute">
+			<result name="success">/teacher.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="stuInf" class="subjectSystem.stuInf" method = "execute">
+			<result name="success">/stuInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="stuInf1" class="subjectSystem.stuInf1" method = "execute">
+			<result name="success">/stuInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="stuInf2" class="subjectSystem.stuInf2" method = "execute">
+			<result name="success">/stuInf2.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="stuInf3" class="subjectSystem.stuInf3" method = "execute">
+			<result name="success">/stuInf3.jsp</result>
+			<result name="false">/stuInfFal.jsp</result>
+		</action>
+		
+		<action name="stuInf4" class="subjectSystem.stuInf4" method = "execute">
+			<result name="success">/stuInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaInf" class="subjectSystem.teaInf" method = "execute">
+			<result name="success">/teaInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaInf1" class="subjectSystem.teaInf1" method = "execute">
+			<result name="success">/teaInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaInf2" class="subjectSystem.teaInf2" method = "execute">
+			<result name="success">/teaInf2.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaInf3" class="subjectSystem.teaInf3" method = "execute">
+			<result name="success">/teaInf3.jsp</result>
+			<result name="false">/teaInfFal.jsp</result>
+		</action>
+		
+		<action name="teaInf4" class="subjectSystem.teaInf4" method = "execute">
+			<result name="success">/teaInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="addStu" class="manager.addStu" method = "execute">
+			<result name="success">/addStu.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="addStu1" class="manager.addStu1" method = "execute">
+			<result name="success">/addStuOk.jsp</result>
+			<result name="false">/addStuFal.jsp</result>
+		</action>
+		
+		<action name="addTea" class="manager.addTea" method = "execute">
+			<result name="success">/addTea.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="addTea1" class="manager.addTea1" method = "execute">
+			<result name="success">/addTeaOk.jsp</result>
+			<result name="false">/addStuFal.jsp</result>
+		</action>
+		
+		<action name="maTea" class="manager.maTea" method = "execute">
+			<result name="success">/maTea.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maTea1" class="manager.maTea1" method = "execute">
+			<result name="success">/maTea.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maDelTea" class="manager.maDelTea" method = "execute">
+			<result name="success">/maTeaDelOK.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maDelTea1" class="manager.maDelTea1" method = "execute">
+			<result name="success">/maTeaDelOK1.jsp</result>
+			<result name="false">/maTeaDelOK2.jsp</result>
+		</action>
+		
+		<action name="maStu" class="manager.maStu" method = "execute">
+			<result name="success">/maStu.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maStu1" class="manager.maStu1" method = "execute">
+			<result name="success">/maStu.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maDelStu" class="manager.maDelStu" method = "execute">
+			<result name="success">/maStuDelOK.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maDelStu1" class="manager.maDelStu1" method = "execute">
+			<result name="success">/maStuDelOK1.jsp</result>
+			<result name="false">/maStuDelOK2.jsp</result>
+		</action>
+		
+		<action name="maStuInf" class="manager.maStuInf" method = "execute">
+			<result name="success">/maStuInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maStuInf1" class="manager.maStuInf1" method = "execute">
+			<result name="success">/maStuInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maTeaInf" class="manager.maTeaInf" method = "execute">
+			<result name="success">/maTeaInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="maTeaInf1" class="manager.maTeaInf1" method = "execute">
+			<result name="success">/maTeaInf.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="searchChooseGrade" class="subjectSystem.searchChooseGrade" method = "execute">
+			<result name="success">/searchChooseGrade.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaSearchGrade" class="subjectSystem.teaSearchGrade" method = "execute">
+			<result name="success">/teaSearchGrade.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="teaSearchGrade1" class="subjectSystem.teaSearchGrade1" method = "execute">
+			<result name="success">/teaSearchGrade.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>
